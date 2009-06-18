@@ -207,8 +207,8 @@ Sub Page_Load(sender As Object, e As EventArgs)
                 Next
             Next
               
-            oBitmap.Save(Server.MapPath("gen_img.jpg"), ImageFormat.Jpeg)
-                Response.Write("<img src='s.png'><br /><img src='s.png'><b>Sculpt Map</b><br/><img src='s.png'><img src=""gen_img.jpg"">")
+            oBitmap.Save(Server.MapPath("gen_img.tiff"), ImageFormat.Tiff)
+                Response.Write("<img src='s.png'><br /><img src='s.png'><b>Sculpt Map</b><br/><img src='s.png'><img src=""gen_img.tiff"">")
             
                 'Now do residue color: http://jmol.sourceforge.net/jscolors/
                 oGraphic.FillRectangle(oBrush, 0, 0, 128, 128)
@@ -270,8 +270,8 @@ Sub Page_Load(sender As Object, e As EventArgs)
                     Next
                 Next
               
-                oBitmap.Save(Server.MapPath("gen_img2.jpg"), ImageFormat.Jpeg)
-                Response.Write("<img src='s.png'><br /><img src='s.png'><b>Amino Acid Residue</b><br/><img src='s.png'><img src=""gen_img2.jpg"">")
+                oBitmap.Save(Server.MapPath("gen_img2.tiff"), ImageFormat.Tiff)
+                Response.Write("<img src='s.png'><br /><img src='s.png'><b>Amino Acid Residue</b><br/><img src='s.png'><img src=""gen_img2.tiff"">")
            
                 'Now do amino acid charge: http://en.wikipedia.org/wiki/Amino_acids#Table_of_standard_amino_acid_abbreviations_and_side_chain_properties
                 oGraphic.FillRectangle(oBrush, 0, 0, 128, 128)
@@ -333,8 +333,8 @@ Sub Page_Load(sender As Object, e As EventArgs)
                     Next
                 Next
               
-                oBitmap.Save(Server.MapPath("gen_img3.jpg"), ImageFormat.Jpeg)
-                Response.Write("<img src='s.png'><br /><img src='s.png'><b>Residue Charge</b><br/><img src='s.png'><img src=""gen_img3.jpg"">")
+                oBitmap.Save(Server.MapPath("gen_img3.tiff"), ImageFormat.Tiff)
+                Response.Write("<img src='s.png'><br /><img src='s.png'><b>Residue Charge</b><br/><img src='s.png'><img src=""gen_img3.tiff"">")
                 
                 'Now do amino acid polarity: 
                 oGraphic.FillRectangle(oBrush, 0, 0, 128, 128)
@@ -396,8 +396,8 @@ Sub Page_Load(sender As Object, e As EventArgs)
                     Next
                 Next
               
-                oBitmap.Save(Server.MapPath("gen_img4.jpg"), ImageFormat.Jpeg)
-                Response.Write("<img src='s.png'><br /><img src='s.png'><b>Polarity</b><br/><img src='s.png'><img src=""gen_img4.jpg"">")
+                oBitmap.Save(Server.MapPath("gen_img4.tiff"), ImageFormat.Tiff)
+                Response.Write("<img src='s.png'><br /><img src='s.png'><b>Polarity</b><br/><img src='s.png'><img src=""gen_img4.tiff"">")
                 
         Catch wex As WebException
                 Response.Write("<img src='s.png'><font color=red>SOMETHING WENT AWRY!<br />Status: " & wex.Status & "Message: " & wex.Message & "</font>")
